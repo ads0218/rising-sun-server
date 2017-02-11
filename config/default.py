@@ -5,12 +5,6 @@ import datetime
 
 class Config(object):
 
-    ROOT_DIR = '/baekganae'
-
-    # RULE CONFIG
-    config_dir = os.path.join(ROOT_DIR, 'conf')
-    if not os.path.exists(config_dir):
-        os.mkdir(config_dir)
 
     BASE_SERVER = 'http://localhost'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///../risingsun.db'
