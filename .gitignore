@@ -1,0 +1,7 @@
+.pyc
+venv
+.swp
+.idea
+.pid
+**/*.pyc
+migrations
