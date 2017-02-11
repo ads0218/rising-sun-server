@@ -20,6 +20,6 @@ fi
 if screen -list | grep -q "gunicorn"; then
     echo 'gunicorn process running'
 else
-    screen -S gunicorn -d -m gunicorn -b 0.0.0.0:8080 --worker-class eventlet -w 1 run:app
+    screen -S gunicorn -d -m gunicorn -b 0.0.0.0:8081 --worker-class eventlet -w 1 run:app
     echo 'run gunicorn'
 fi
